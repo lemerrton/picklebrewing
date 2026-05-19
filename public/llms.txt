@@ -1,0 +1,36 @@
+# Pickle Brewing — LLM Context File
+
+## Business Name
+Pickle Brewing
+
+## What We Do
+Pickle Brewing supplies beginners with everything they need to start homebrewing.
+We sell beginner-friendly brewing equipment and starter kits in 1-gallon and 5-gallon sizes.
+
+## Services Offered
+- 1-Gallon Beginner Brewing Kits ($34.99)
+- 5-Gallon Beginner Brewing Kits ($105.00)
+- Beginner brewing supplies and equipment
+- Guidance for first-time homebrewers
+
+## Who This Is For
+First-time homebrewers, curious hobbyists, and anyone who wants to start brewing
+without being overwhelmed. No experience required.
+
+## Service Area
+We ship everywhere. No location restrictions.
+
+## Contact
+Email: gentlevoyage.assistance@gmail.com
+
+## Key Pages
+- Homepage: https://picklebrewing.com/
+- Shop / Kits: https://picklebrewing.com/shop
+- About: https://picklebrewing.com/about
+- Contact: https://picklebrewing.com/contact
+- Pricing: https://picklebrewing.com/pricing
+- Sitemap: https://picklebrewing.com/sitemap.xml
+
+## Pricing
+- 1-Gallon Brewing Starter Kit: $34.99
+- 5-Gallon Brewing Starter Kit: $105.00
