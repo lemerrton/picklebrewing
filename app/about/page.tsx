@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ImageSlot from "@/components/ImageSlot";
 
 export const metadata: Metadata = {
-  title: "About — Pickle Brewing",
+  title: "About Us",
   description:
-    "Learn about Pickle Brewing — a small shop focused on helping beginners get into homebrewing without the intimidation.",
+    "Pickle Brewing is a small shop helping beginners get into homebrewing. We make the best beginner brewing kits — no intimidation, just good brewing.",
+  alternates: { canonical: "https://picklebrewing.com/about" },
+  openGraph: {
+    title: "About Pickle Brewing",
+    description: "A small shop helping beginners get into homebrewing without the intimidation.",
+    url: "https://picklebrewing.com/about",
+  },
 };
 
 export default function About() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-16">
+    <article className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="font-heading text-4xl font-bold text-brown-900">
         Hey, we&apos;re Pickle Brewing
       </h1>
@@ -17,18 +24,27 @@ export default function About() {
       <div className="mt-8 space-y-5 text-brown-700 leading-relaxed">
         <p>
           We started Pickle Brewing because we believe everyone deserves to try
-          making their own beer, cider, or ale — and it shouldn&apos;t require a
-          degree in fermentation science to get started.
+          making their own beer, cider, or mead — and it shouldn&apos;t require a
+          degree in fermentation science to get started. That&apos;s why we built
+          the best beginner brewing kit we could: simple, affordable, and
+          genuinely beginner-friendly.
         </p>
         <p>
-          Our kits are built for beginners. No confusing equipment lists, no
-          walls of jargon, no gatekeeping. Just everything you need in one box,
-          with clear instructions that actually make sense.
+          Our kits are designed for people who&apos;ve never brewed before. No
+          confusing equipment lists, no walls of jargon, no gatekeeping. Just
+          everything you need in one box, with{" "}
+          <Link href="/fermentation-guide" className="underline hover:no-underline text-brown-900">
+            clear instructions
+          </Link>{" "}
+          that actually make sense.
         </p>
         <p>
-          Whether you&apos;re brewing your very first gallon or upgrading to a
-          full five-gallon batch, we&apos;re here to make the process simple,
-          affordable, and genuinely fun.
+          Whether you&apos;re trying a{" "}
+          <Link href="/1-gallon-brewing-kit" className="underline hover:no-underline text-brown-900">
+            1 gallon brewing kit
+          </Link>{" "}
+          for the first time or upgrading to a full five-gallon batch, we&apos;re
+          here to make home brewing simple, affordable, and genuinely fun.
         </p>
       </div>
 
@@ -45,6 +61,6 @@ export default function About() {
           gentlevoyage.assistance@gmail.com
         </a>
       </p>
-    </section>
+    </article>
   );
 }

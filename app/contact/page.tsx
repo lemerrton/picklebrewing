@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Pickle Brewing",
+  title: "Contact Us",
   description:
-    "Get in touch with Pickle Brewing. Questions about kits, shipping, or homebrewing? We're happy to help.",
+    "Get in touch with Pickle Brewing. Questions about our beginner brewing kits, shipping, or homebrewing in general? We're happy to help.",
+  alternates: { canonical: "https://picklebrewing.com/contact" },
+  openGraph: {
+    title: "Contact Pickle Brewing",
+    description: "Questions about kits, shipping, or homebrewing? We're happy to help.",
+    url: "https://picklebrewing.com/contact",
+  },
 };
 
 export default function Contact() {
@@ -14,6 +20,7 @@ export default function Contact() {
       </h1>
       <p className="text-brown-700 mt-4 leading-relaxed">
         Questions about a kit? Not sure which size to start with? Just say hi.
+        We love hearing from fellow brewers (and future brewers).
       </p>
 
       <div className="mt-8 bg-tan-200 rounded-2xl p-8">

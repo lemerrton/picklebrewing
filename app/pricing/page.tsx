@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pricing — Pickle Brewing",
+  title: "Pricing",
   description:
-    "Simple, honest pricing for Pickle Brewing kits. 1-gallon kits starting at $34.99, 5-gallon kits at $105.00.",
+    "Simple, honest pricing for Pickle Brewing beginner brewing kits. 1-gallon kits at $34.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
+  alternates: { canonical: "https://picklebrewing.com/pricing" },
+  openGraph: {
+    title: "Pricing — Pickle Brewing",
+    description: "1-gallon kits at $34.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
+    url: "https://picklebrewing.com/pricing",
+  },
 };
 
 export default function Pricing() {
@@ -14,7 +20,7 @@ export default function Pricing() {
         Simple, Honest Pricing
       </h1>
       <p className="text-brown-700 text-center mt-3">
-        No subscriptions, no hidden fees. Just the kit you need.
+        No subscriptions, no hidden fees. Just the beginner brewing kit you need.
       </p>
 
       <div className="mt-12 grid sm:grid-cols-2 gap-6">
@@ -24,13 +30,13 @@ export default function Pricing() {
           </h2>
           <p className="text-4xl font-bold text-brown-900 mt-4">$34.99</p>
           <ul className="mt-6 space-y-2 text-sm text-brown-700 text-left">
-            <li className="flex items-start gap-2"><span className="text-tan-600">•</span>1-gallon fermenting vessel</li>
+            <li className="flex items-start gap-2"><span className="text-tan-600">•</span>1-gallon glass fermenting vessel</li>
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>Airlock and stopper</li>
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>Sanitizer packet</li>
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>Step-by-step instructions</li>
           </ul>
           <Link
-            href="/shop"
+            href="/1-gallon-brewing-kit"
             className="inline-block mt-6 bg-brown-900 text-white font-body font-semibold py-2.5 px-6 rounded-lg hover:bg-brown-700 transition-colors text-sm"
           >
             View Kit
@@ -43,7 +49,7 @@ export default function Pricing() {
           </h2>
           <p className="text-4xl font-bold text-brown-900 mt-4">$105.00</p>
           <ul className="mt-6 space-y-2 text-sm text-brown-700 text-left">
-            <li className="flex items-start gap-2"><span className="text-tan-600">•</span>5-gallon fermenting vessel</li>
+            <li className="flex items-start gap-2"><span className="text-tan-600">•</span>5-gallon glass carboy fermenting vessel</li>
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>Airlock and stopper</li>
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>Sanitizer packet</li>
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>Step-by-step instructions</li>
@@ -64,7 +70,11 @@ export default function Pricing() {
           className="text-brown-900 underline hover:no-underline"
         >
           Email us
-        </a>
+        </a>{" "}
+        or check out our{" "}
+        <Link href="/best-beginner-brewing-kit" className="text-brown-900 underline hover:no-underline">
+          best beginner brewing kit guide
+        </Link>
       </p>
     </section>
   );
