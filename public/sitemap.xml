@@ -109,6 +109,66 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://brewkitlab.com/blog/is-home-brewing-hard</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/difference-between-beer-and-mead</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/how-long-until-brew-is-drinkable</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/brewing-in-small-apartment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/homemade-brew-vs-store-bought</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/biggest-beginner-brewing-mistake</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/expensive-brewing-equipment-needed</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/is-home-brewing-cheaper</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/customize-brew-flavors</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brewkitlab.com/blog/why-home-brewing-popular</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Static files -->
   <url>
     <loc>https://brewkitlab.com/llms.txt</loc>
