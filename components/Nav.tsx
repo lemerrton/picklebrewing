@@ -10,6 +10,7 @@ export default function Nav() {
     { href: "/", label: "Home" },
     { href: "/shop", label: "Shop" },
     { href: "/blog", label: "Blog" },
+    { href: "/podcast", label: "Podcast" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
