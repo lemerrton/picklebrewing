@@ -1,4 +1,4 @@
-# Pricing — Pickle Brewing
+# Pricing — BrewKit Lab
 
 Simple, honest pricing. No subscriptions, no hidden fees.
 
@@ -21,4 +21,4 @@ Both kits include everything a beginner needs:
 
 Email: gentlevoyage.assistance@gmail.com
 
-[Shop now](https://picklebrewing.com/shop)
+[Shop now](https://brewkitlab.com/shop)

@@ -18,7 +18,7 @@ export default function Nav() {
     <nav className="bg-white border-b border-tan-400">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="font-heading text-2xl font-bold text-brown-900">
-          Pickle Brewing
+          BrewKit Lab
         </Link>
 
         <button

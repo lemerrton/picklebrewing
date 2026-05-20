@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <p className="font-heading text-xl font-bold text-brown-900">
-              Pickle Brewing
+              BrewKit Lab
             </p>
             <p className="text-brown-700 mt-2 text-sm">
               The best beginner brewing kit for first-time brewers. Simple kits, clear instructions, zero intimidation.
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         <p className="text-xs text-tan-600 mt-8 text-center">
-          © {new Date().getFullYear()} Pickle Brewing. All rights reserved.
+          © {new Date().getFullYear()} BrewKit Lab. All rights reserved.
         </p>
       </div>
     </footer>

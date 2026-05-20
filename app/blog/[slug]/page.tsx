@@ -22,11 +22,11 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `https://picklebrewing.com/blog/${post.slug}` },
+    alternates: { canonical: `https://brewkitlab.com/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://picklebrewing.com/blog/${post.slug}`,
+      url: `https://brewkitlab.com/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
     },
@@ -76,13 +76,13 @@ export default async function BlogPost({
           </h1>
           <div className="mt-4">
             <ShareButtons
-              url={`https://picklebrewing.com/blog/${post.slug}`}
+              url={`https://brewkitlab.com/blog/${post.slug}`}
               title={post.title}
             />
           </div>
         </header>
 
-        <div className="mt-10 prose-pickle space-y-4 text-brown-700 leading-relaxed [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-brown-900 [&_h2]:mt-10 [&_h2]:mb-3 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:text-sm [&_strong]:text-brown-900">
+        <div className="mt-10 prose-brewkit space-y-4 text-brown-700 leading-relaxed [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-brown-900 [&_h2]:mt-10 [&_h2]:mb-3 [&_ul]:space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:text-sm [&_strong]:text-brown-900">
           {content}
         </div>
 

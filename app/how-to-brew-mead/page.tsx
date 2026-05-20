@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "How to Brew Mead — Easy Beginner Guide",
   description:
     "Learn how to brew mead at home with this simple beginner guide. All you need is honey, water, yeast, and a basic brewing kit. Step-by-step instructions included.",
-  alternates: { canonical: "https://picklebrewing.com/how-to-brew-mead" },
+  alternates: { canonical: "https://brewkitlab.com/how-to-brew-mead" },
   openGraph: {
     title: "How to Brew Mead — Easy Beginner Guide",
     description: "Learn how to brew mead at home. Honey + water + yeast = mead. It's that simple.",
-    url: "https://picklebrewing.com/how-to-brew-mead",
+    url: "https://brewkitlab.com/how-to-brew-mead",
   },
 };
 
@@ -48,7 +48,7 @@ export default function HowToBrewMead() {
           and you&apos;re in business. Here&apos;s exactly how to do it.
         </p>
         <div className="mt-4">
-          <ShareButtons url="https://picklebrewing.com/how-to-brew-mead" title="How to Brew Mead at Home" />
+          <ShareButtons url="https://brewkitlab.com/how-to-brew-mead" title="How to Brew Mead at Home" />
         </div>
 
         <section className="mt-10">

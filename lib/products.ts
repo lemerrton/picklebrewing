@@ -59,21 +59,21 @@ export function productJsonLd(product: Product) {
     "@type": "Product",
     name: product.name,
     description: product.seoDescription,
-    image: `https://picklebrewing.com${product.imagePath}`,
+    image: `https://brewkitlab.com${product.imagePath}`,
     sku: product.sku,
     brand: {
       "@type": "Brand",
-      name: "Pickle Brewing",
+      name: "BrewKit Lab",
     },
     offers: {
       "@type": "Offer",
-      url: `https://picklebrewing.com/shop`,
+      url: `https://brewkitlab.com/shop`,
       priceCurrency: "USD",
       price: product.price.toFixed(2),
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
-        name: "Pickle Brewing",
+        name: "BrewKit Lab",
       },
     },
   };

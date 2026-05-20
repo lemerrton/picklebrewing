@@ -1,4 +1,4 @@
-# Contact Pickle Brewing
+# Contact BrewKit Lab
 
 Have a question about a kit? Not sure which size to start with? Just want to say hi?
 
@@ -15,4 +15,4 @@ We try to respond within 1–2 business days.
 - Shipping questions
 - General homebrewing curiosity
 
-[Back to contact page](https://picklebrewing.com/contact)
+[Back to contact page](https://brewkitlab.com/contact)

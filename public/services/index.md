@@ -1,4 +1,4 @@
-# Brewing Kits & Supplies — Pickle Brewing
+# Brewing Kits & Supplies — BrewKit Lab
 
 We offer two starter kit sizes, both designed for beginners.
 
@@ -31,4 +31,4 @@ No prior experience needed.
 
 Email: gentlevoyage.assistance@gmail.com
 
-[View kits on site](https://picklebrewing.com/shop)
+[View kits on site](https://brewkitlab.com/shop)

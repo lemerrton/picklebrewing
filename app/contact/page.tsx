@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Pickle Brewing. Questions about our beginner brewing kits, shipping, or homebrewing in general? We're happy to help.",
-  alternates: { canonical: "https://picklebrewing.com/contact" },
+    "Get in touch with BrewKit Lab. Questions about our beginner brewing kits, shipping, or homebrewing in general? We're happy to help.",
+  alternates: { canonical: "https://brewkitlab.com/contact" },
   openGraph: {
-    title: "Contact Pickle Brewing",
+    title: "Contact BrewKit Lab",
     description: "Questions about kits, shipping, or homebrewing? We're happy to help.",
-    url: "https://picklebrewing.com/contact",
+    url: "https://brewkitlab.com/contact",
   },
 };
 

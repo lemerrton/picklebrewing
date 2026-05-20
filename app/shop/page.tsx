@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Shop Beginner Brewing Kits",
   description:
     "Browse our beginner-friendly 1-gallon and 5-gallon homebrewing starter kits. The best home brewing kit for beginners — everything you need in one box.",
-  alternates: { canonical: "https://picklebrewing.com/shop" },
+  alternates: { canonical: "https://brewkitlab.com/shop" },
   openGraph: {
-    title: "Shop Beginner Brewing Kits — Pickle Brewing",
+    title: "Shop Beginner Brewing Kits — BrewKit Lab",
     description:
       "Starter fermentation kits designed for first-time brewers. Simple, affordable, ships everywhere.",
-    url: "https://picklebrewing.com/shop",
+    url: "https://brewkitlab.com/shop",
   },
 };
 

@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "How Long Does Mead Take to Brew? Complete Timeline",
   description:
     "Wondering how long mead takes to brew? From start to drinkable in 4-6 weeks, with peak flavor at 3-6 months. Here's the full mead brewing timeline for beginners.",
-  alternates: { canonical: "https://picklebrewing.com/how-long-does-mead-take" },
+  alternates: { canonical: "https://brewkitlab.com/how-long-does-mead-take" },
   openGraph: {
     title: "How Long Does Mead Take to Brew?",
     description: "Full mead brewing timeline: drinkable in 4-6 weeks, peak flavor at 3-6 months.",
-    url: "https://picklebrewing.com/how-long-does-mead-take",
+    url: "https://brewkitlab.com/how-long-does-mead-take",
   },
 };
 
@@ -27,7 +27,7 @@ export default function HowLongDoesMeadTake() {
         amazing at 6+.
       </p>
       <div className="mt-4">
-        <ShareButtons url="https://picklebrewing.com/how-long-does-mead-take" title="How Long Does Mead Take to Brew?" />
+        <ShareButtons url="https://brewkitlab.com/how-long-does-mead-take" title="How Long Does Mead Take to Brew?" />
       </div>
 
       <section className="mt-10">

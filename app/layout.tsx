@@ -19,11 +19,11 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pickle Brewing — Beginner Brewing Kits for First-Time Brewers",
-    template: "%s | Pickle Brewing",
+    default: "BrewKit Lab — Beginner Brewing Kits for First-Time Brewers",
+    template: "%s | BrewKit Lab",
   },
   description:
-    "Pickle Brewing sells beginner-friendly 1-gallon and 5-gallon homebrewing starter kits. The best starter fermentation kit for first-time brewers. Ships everywhere.",
+    "BrewKit Lab sells beginner-friendly 1-gallon and 5-gallon homebrewing starter kits. The best starter fermentation kit for first-time brewers. Ships everywhere.",
   keywords: [
     "best beginner brewing kit",
     "1 gallon brewing kit",
@@ -32,24 +32,24 @@ export const metadata: Metadata = {
     "small batch brewing kit",
     "easy mead brewing kit",
     "TikTok brewing kit",
-    "pickle brewing",
+    "brewkitlab",
   ],
-  metadataBase: new URL("https://picklebrewing.com"),
+  metadataBase: new URL("https://brewkitlab.com"),
   alternates: {
-    canonical: "https://picklebrewing.com",
+    canonical: "https://brewkitlab.com",
   },
   openGraph: {
-    title: "Pickle Brewing — Beginner Brewing Kits",
+    title: "BrewKit Lab — Beginner Brewing Kits",
     description:
       "The best beginner brewing kit for first-time brewers. Simple starter kits, clear instructions, ships everywhere.",
-    url: "https://picklebrewing.com",
-    siteName: "Pickle Brewing",
+    url: "https://brewkitlab.com",
+    siteName: "BrewKit Lab",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pickle Brewing — Beginner Brewing Kits",
+    title: "BrewKit Lab — Beginner Brewing Kits",
     description:
       "The best beginner brewing kit for first-time brewers. Simple starter kits, clear instructions, ships everywhere.",
   },
@@ -62,8 +62,8 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Pickle Brewing",
-  url: "https://picklebrewing.com",
+  name: "BrewKit Lab",
+  url: "https://brewkitlab.com",
   contactPoint: {
     "@type": "ContactPoint",
     email: "gentlevoyage.assistance@gmail.com",

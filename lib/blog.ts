@@ -68,17 +68,17 @@ export function articleJsonLd(post: BlogPost) {
     datePublished: post.date,
     author: {
       "@type": "Organization",
-      name: "Pickle Brewing",
-      url: "https://picklebrewing.com",
+      name: "BrewKit Lab",
+      url: "https://brewkitlab.com",
     },
     publisher: {
       "@type": "Organization",
-      name: "Pickle Brewing",
-      url: "https://picklebrewing.com",
+      name: "BrewKit Lab",
+      url: "https://brewkitlab.com",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://picklebrewing.com/blog/${post.slug}`,
+      "@id": `https://brewkitlab.com/blog/${post.slug}`,
     },
   };
 }

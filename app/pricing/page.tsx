@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, honest pricing for Pickle Brewing beginner brewing kits. 1-gallon kits at $34.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
-  alternates: { canonical: "https://picklebrewing.com/pricing" },
+    "Simple, honest pricing for BrewKit Lab beginner brewing kits. 1-gallon kits at $34.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
+  alternates: { canonical: "https://brewkitlab.com/pricing" },
   openGraph: {
-    title: "Pricing — Pickle Brewing",
+    title: "Pricing — BrewKit Lab",
     description: "1-gallon kits at $34.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
-    url: "https://picklebrewing.com/pricing",
+    url: "https://brewkitlab.com/pricing",
   },
 };
 

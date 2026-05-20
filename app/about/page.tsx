@@ -5,12 +5,12 @@ import ImageSlot from "@/components/ImageSlot";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Pickle Brewing is a small shop helping beginners get into homebrewing. We make the best beginner brewing kits — no intimidation, just good brewing.",
-  alternates: { canonical: "https://picklebrewing.com/about" },
+    "BrewKit Lab is a small shop helping beginners get into homebrewing. We make the best beginner brewing kits — no intimidation, just good brewing.",
+  alternates: { canonical: "https://brewkitlab.com/about" },
   openGraph: {
-    title: "About Pickle Brewing",
+    title: "About BrewKit Lab",
     description: "A small shop helping beginners get into homebrewing without the intimidation.",
-    url: "https://picklebrewing.com/about",
+    url: "https://brewkitlab.com/about",
   },
 };
 
@@ -18,12 +18,12 @@ export default function About() {
   return (
     <article className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="font-heading text-4xl font-bold text-brown-900">
-        Hey, we&apos;re Pickle Brewing
+        Hey, we&apos;re BrewKit Lab
       </h1>
 
       <div className="mt-8 space-y-5 text-brown-700 leading-relaxed">
         <p>
-          We started Pickle Brewing because we believe everyone deserves to try
+          We started BrewKit Lab because we believe everyone deserves to try
           making their own beer, cider, or mead — and it shouldn&apos;t require a
           degree in fermentation science to get started. That&apos;s why we built
           the best beginner brewing kit we could: simple, affordable, and

@@ -6,8 +6,8 @@ import JsonLd from "@/components/JsonLd";
 const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Pickle Brewing",
-  url: "https://picklebrewing.com",
+  name: "BrewKit Lab",
+  url: "https://brewkitlab.com",
   description:
     "The best beginner brewing kit for first-time brewers. 1 gallon and 5 gallon starter fermentation kits that ship everywhere.",
 };
@@ -95,10 +95,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-tan-200" aria-label="Why Pickle Brewing">
+      <section className="bg-tan-200" aria-label="Why BrewKit Lab">
         <div className="max-w-5xl mx-auto px-6 py-16">
           <h2 className="font-heading text-3xl font-bold text-brown-900 text-center mb-10">
-            Why Pickle Brewing?
+            Why BrewKit Lab?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[

@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Fermentation Guide for Beginners",
   description:
     "Everything you need to know about fermentation as a beginner brewer. Learn what fermentation is, how it works, and what to expect during your first brew.",
-  alternates: { canonical: "https://picklebrewing.com/fermentation-guide" },
+  alternates: { canonical: "https://brewkitlab.com/fermentation-guide" },
   openGraph: {
-    title: "Fermentation Guide for Beginners — Pickle Brewing",
+    title: "Fermentation Guide for Beginners — BrewKit Lab",
     description: "A clear, beginner-friendly guide to understanding fermentation.",
-    url: "https://picklebrewing.com/fermentation-guide",
+    url: "https://brewkitlab.com/fermentation-guide",
   },
 };
 
@@ -30,7 +30,7 @@ export default function FermentationGuide() {
         less mysterious.
       </p>
       <div className="mt-4">
-        <ShareButtons url="https://picklebrewing.com/fermentation-guide" title="Fermentation Guide for Beginners" />
+        <ShareButtons url="https://brewkitlab.com/fermentation-guide" title="Fermentation Guide for Beginners" />
       </div>
 
       <section className="mt-10">

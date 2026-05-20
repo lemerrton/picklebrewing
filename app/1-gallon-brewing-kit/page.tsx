@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "1 Gallon Brewing Kit — Perfect for First-Time Brewers",
   description:
     "Our 1 gallon brewing kit is the best small batch brewing kit for beginners. Includes glass fermenter, airlock, sanitizer, and step-by-step instructions. $34.99, ships everywhere.",
-  alternates: { canonical: "https://picklebrewing.com/1-gallon-brewing-kit" },
+  alternates: { canonical: "https://brewkitlab.com/1-gallon-brewing-kit" },
   openGraph: {
-    title: "1 Gallon Brewing Kit — Pickle Brewing",
+    title: "1 Gallon Brewing Kit — BrewKit Lab",
     description: "The best small batch brewing kit for beginners. Everything you need for $34.99.",
-    url: "https://picklebrewing.com/1-gallon-brewing-kit",
+    url: "https://brewkitlab.com/1-gallon-brewing-kit",
   },
 };
 

@@ -5,12 +5,12 @@ import BlogCard from "@/components/BlogCard";
 export const metadata: Metadata = {
   title: "Blog — Brewing Guides & Tips",
   description:
-    "Brewing guides, fermentation tips, and beginner advice from Pickle Brewing. Learn how to start brewing at home, avoid common mistakes, and make your best brew yet.",
-  alternates: { canonical: "https://picklebrewing.com/blog" },
+    "Brewing guides, fermentation tips, and beginner advice from BrewKit Lab. Learn how to start brewing at home, avoid common mistakes, and make your best brew yet.",
+  alternates: { canonical: "https://brewkitlab.com/blog" },
   openGraph: {
-    title: "Pickle Brewing Blog — Guides & Tips for Beginner Brewers",
+    title: "BrewKit Lab Blog — Guides & Tips for Beginner Brewers",
     description: "Brewing guides, fermentation tips, and beginner advice.",
-    url: "https://picklebrewing.com/blog",
+    url: "https://brewkitlab.com/blog",
   },
 };
 

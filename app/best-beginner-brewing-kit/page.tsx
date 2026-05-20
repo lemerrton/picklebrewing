@@ -7,12 +7,12 @@ import { products, productJsonLd } from "@/lib/products";
 export const metadata: Metadata = {
   title: "Best Beginner Brewing Kit (2026) — Start Brewing Today",
   description:
-    "Looking for the best beginner brewing kit? Pickle Brewing's starter kits include everything first-time brewers need — fermenter, airlock, sanitizer, and step-by-step instructions.",
-  alternates: { canonical: "https://picklebrewing.com/best-beginner-brewing-kit" },
+    "Looking for the best beginner brewing kit? BrewKit Lab's starter kits include everything first-time brewers need — fermenter, airlock, sanitizer, and step-by-step instructions.",
+  alternates: { canonical: "https://brewkitlab.com/best-beginner-brewing-kit" },
   openGraph: {
-    title: "Best Beginner Brewing Kit — Pickle Brewing",
+    title: "Best Beginner Brewing Kit — BrewKit Lab",
     description: "The best starter brewing kit for first-time brewers. Everything you need in one box.",
-    url: "https://picklebrewing.com/best-beginner-brewing-kit",
+    url: "https://brewkitlab.com/best-beginner-brewing-kit",
   },
 };
 
@@ -39,7 +39,7 @@ export default function BestBeginnerBrewingKit() {
             <div className="w-full md:w-1/3">
               <Image
                 src="/images/1-gallon-kit.png"
-                alt="Best beginner brewing kit — Pickle Brewing 1 gallon starter kit"
+                alt="Best beginner brewing kit — BrewKit Lab 1 gallon starter kit"
                 width={400}
                 height={400}
                 className="object-contain w-full"

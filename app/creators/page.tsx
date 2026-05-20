@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Creator Program — Brew & Share",
   description:
-    "Join Pickle Brewing's creator program. Share your brewing journey on TikTok, YouTube, or Instagram and earn commissions on every kit sold through your link.",
-  alternates: { canonical: "https://picklebrewing.com/creators" },
+    "Join BrewKit Lab's creator program. Share your brewing journey on TikTok, YouTube, or Instagram and earn commissions on every kit sold through your link.",
+  alternates: { canonical: "https://brewkitlab.com/creators" },
   openGraph: {
-    title: "Pickle Brewing Creator Program",
+    title: "BrewKit Lab Creator Program",
     description: "Share your brewing journey and earn commissions on every kit sold.",
-    url: "https://picklebrewing.com/creators",
+    url: "https://brewkitlab.com/creators",
   },
 };
 
