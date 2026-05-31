@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import ImageSlot from "@/components/ImageSlot";
 import JsonLd from "@/components/JsonLd";
 
 const webSiteJsonLd = {
@@ -35,7 +34,16 @@ export default function Home() {
               Shop Kits
             </Link>
           </div>
-          <ImageSlot label="Hero photo — your brewing setup" aspectRatio="aspect-video" />
+          <div className="aspect-video w-full rounded-xl overflow-hidden bg-white border border-tan-400">
+            <Image
+              src="/images/brewing-setup.png"
+              alt="Beginner home brewing setup with glass fermenter, fermentation bucket with airlock, priming sugar packets, and hops"
+              width={1456}
+              height={1080}
+              priority
+              className="object-cover w-full h-full"
+            />
+          </div>
         </div>
       </section>
 
