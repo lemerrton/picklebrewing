@@ -8,6 +8,7 @@ export interface Product {
   includes: string[];
   size: string;
   sku: string;
+  stripeUrl: string;
 }
 
 export const products: Product[] = [
@@ -28,6 +29,7 @@ export const products: Product[] = [
     ],
     size: "1 Gallon",
     sku: "PB-1GAL-KIT",
+    stripeUrl: "https://buy.stripe.com/aFa4gzcyx1cN8pUclde3e01",
   },
   {
     name: "5-Gallon Brewing Starter Kit",
@@ -46,6 +48,7 @@ export const products: Product[] = [
     ],
     size: "5 Gallon",
     sku: "PB-5GAL-KIT",
+    stripeUrl: "https://buy.stripe.com/aFa8wPfKJ8Ff0Xsad5e3e02",
   },
 ];
 

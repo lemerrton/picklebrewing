@@ -79,11 +79,16 @@ export default function Shop() {
                 </div>
 
                 <a
-                  href={`mailto:gentlevoyage.assistance@gmail.com?subject=Order Inquiry — ${product.name}`}
+                  href={product.stripeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 block text-center bg-brown-900 text-white font-body font-semibold py-3 px-6 rounded-lg hover:bg-brown-700 transition-colors"
                 >
-                  Buy Now
+                  Buy Now — ${product.price.toFixed(2)}
                 </a>
+                <p className="mt-2 text-xs text-tan-600 text-center">
+                  Secure checkout via Stripe
+                </p>
               </div>
             </article>
           ))}

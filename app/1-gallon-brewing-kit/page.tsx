@@ -63,12 +63,12 @@ export default function OneGallonBrewingKit() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href="https://buy.stripe.com/aFa4gzcyx1cN8pUclde3e01"
+                href={product.stripeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-brown-900 text-white font-body font-semibold py-3 px-8 rounded-lg hover:bg-brown-700 transition-colors"
               >
-                Buy Now — $34.99
+                Buy Now — ${product.price.toFixed(2)}
               </a>
               <a
                 href={`mailto:gentlevoyage.assistance@gmail.com?subject=Order Inquiry — ${product.name}`}
