@@ -61,12 +61,25 @@ export default function OneGallonBrewingKit() {
               </ul>
             </div>
 
-            <a
-              href={`mailto:gentlevoyage.assistance@gmail.com?subject=Order Inquiry — ${product.name}`}
-              className="mt-6 inline-block bg-brown-900 text-white font-body font-semibold py-3 px-8 rounded-lg hover:bg-brown-700 transition-colors"
-            >
-              Buy Now
-            </a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="https://buy.stripe.com/aFa4gzcyx1cN8pUclde3e01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-brown-900 text-white font-body font-semibold py-3 px-8 rounded-lg hover:bg-brown-700 transition-colors"
+              >
+                Buy Now — $34.99
+              </a>
+              <a
+                href={`mailto:gentlevoyage.assistance@gmail.com?subject=Order Inquiry — ${product.name}`}
+                className="inline-block bg-white border border-tan-400 text-brown-900 font-body font-semibold py-3 px-8 rounded-lg hover:bg-cream transition-colors"
+              >
+                Questions? Email us
+              </a>
+            </div>
+            <p className="mt-2 text-xs text-tan-600">
+              Secure checkout via Stripe. Ships everywhere.
+            </p>
           </div>
         </div>
 
