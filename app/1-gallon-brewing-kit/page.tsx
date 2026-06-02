@@ -85,6 +85,59 @@ export default function OneGallonBrewingKit() {
 
         <section className="mt-16">
           <h2 className="font-heading text-2xl font-bold text-brown-900">
+            See What&apos;s In the Box
+          </h2>
+          <p className="text-brown-700 mt-2 text-sm">
+            Every kit includes a glass fermenter, airlock, yeast, hydrometer, and clear instructions.
+          </p>
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
+              <div className="aspect-square">
+                <Image
+                  src="/images/1-gallon-yeast.png"
+                  alt="SafAle US-05 dry ale yeast packet included in brewing kit"
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
+                SafAle US-05 dry ale yeast
+              </p>
+            </div>
+            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
+              <div className="aspect-square">
+                <Image
+                  src="/images/1-gallon-hydrometer.png"
+                  alt="Triple scale hydrometer for measuring fermentation progress"
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
+                Triple-scale hydrometer
+              </p>
+            </div>
+            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
+              <div className="aspect-square">
+                <Image
+                  src="/images/1-gallon-fermenting.png"
+                  alt="1 gallon glass fermenter with active fermentation and airlock"
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
+                Active fermentation in action
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="font-heading text-2xl font-bold text-brown-900">
             Why Start With a 1 Gallon Brewing Kit?
           </h2>
           <div className="mt-4 space-y-4 text-brown-700 leading-relaxed">
