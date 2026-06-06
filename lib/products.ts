@@ -15,7 +15,7 @@ export const products: Product[] = [
   {
     name: "1-Gallon Brewing Starter Kit",
     slug: "1-gallon-brewing-kit",
-    price: 34.99,
+    price: 59.99,
     description:
       "Designed for first-time brewers, this 1 gallon brewing kit simplifies fermentation with everything you need in one box — no experience required. Perfect for small batch brewing on your kitchen counter.",
     seoDescription:

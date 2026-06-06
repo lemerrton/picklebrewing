@@ -2,7 +2,7 @@
 
 We offer two starter kit sizes, both designed for beginners.
 
-## 1-Gallon Brewing Starter Kit — $34.99
+## 1-Gallon Brewing Starter Kit — $59.99
 
 Everything you need to brew your first gallon at home.
 

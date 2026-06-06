@@ -68,7 +68,7 @@ export default function Home() {
               />
             </div>
             <h3 className="font-heading text-xl font-bold text-brown-900 mt-6">
-              1 Gallon Brewing Kit — $34.99
+              1 Gallon Brewing Kit — $59.99
             </h3>
             <p className="text-brown-700 mt-2 text-sm">
               The perfect small batch brewing kit for your first brew. Kitchen-counter

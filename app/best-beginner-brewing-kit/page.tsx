@@ -47,7 +47,7 @@ export default function BestBeginnerBrewingKit() {
             </div>
             <div className="flex-1">
               <h2 className="font-heading text-2xl font-bold text-brown-900">
-                Our Pick: 1-Gallon Starter Kit — $34.99
+                Our Pick: 1-Gallon Starter Kit — $59.99
               </h2>
               <p className="text-brown-700 mt-3 leading-relaxed">
                 {oneGallon.description}

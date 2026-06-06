@@ -4,11 +4,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, honest pricing for BrewKit Lab beginner brewing kits. 1-gallon kits at $34.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
+    "Simple, honest pricing for BrewKit Lab beginner brewing kits. 1-gallon kits at $59.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
   alternates: { canonical: "https://brewkitlab.com/pricing" },
   openGraph: {
     title: "Pricing — BrewKit Lab",
-    description: "1-gallon kits at $34.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
+    description: "1-gallon kits at $59.99, 5-gallon kits at $105.00. No subscriptions, no hidden fees.",
     url: "https://brewkitlab.com/pricing",
   },
 };
@@ -28,7 +28,7 @@ export default function Pricing() {
           <h2 className="font-heading text-lg font-bold text-brown-900">
             1-Gallon Starter Kit
           </h2>
-          <p className="text-4xl font-bold text-brown-900 mt-4">$34.99</p>
+          <p className="text-4xl font-bold text-brown-900 mt-4">$59.99</p>
           <ul className="mt-6 space-y-2 text-sm text-brown-700 text-left">
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>1-gallon glass fermenting vessel</li>
             <li className="flex items-start gap-2"><span className="text-tan-600">•</span>Airlock and stopper</li>

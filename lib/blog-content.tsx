@@ -679,7 +679,7 @@ export const blogContent: Record<string, ReactNode> = {
         <Link href="/1-gallon-brewing-kit" className="underline hover:no-underline text-brown-900">
           1-gallon brewing kit
         </Link>{" "}
-        costs $34.99. Ingredients for a batch run $5–15 depending on what
+        costs $59.99. Ingredients for a batch run $5–15 depending on what
         you&apos;re making. That batch produces roughly 10 bottles of finished
         brew.
       </p>

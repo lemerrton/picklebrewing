@@ -7,11 +7,11 @@ import { products, productJsonLd } from "@/lib/products";
 export const metadata: Metadata = {
   title: "1 Gallon Brewing Kit — Perfect for First-Time Brewers",
   description:
-    "Our 1 gallon brewing kit is the best small batch brewing kit for beginners. Includes glass fermenter, airlock, sanitizer, and step-by-step instructions. $34.99, ships everywhere.",
+    "Our 1 gallon brewing kit is the best small batch brewing kit for beginners. Includes glass fermenter, airlock, sanitizer, and step-by-step instructions. $59.99, ships everywhere.",
   alternates: { canonical: "https://brewkitlab.com/1-gallon-brewing-kit" },
   openGraph: {
     title: "1 Gallon Brewing Kit — BrewKit Lab",
-    description: "The best small batch brewing kit for beginners. Everything you need for $34.99.",
+    description: "The best small batch brewing kit for beginners. Everything you need for $59.99.",
     url: "https://brewkitlab.com/1-gallon-brewing-kit",
   },
 };
@@ -42,7 +42,7 @@ export default function OneGallonBrewingKit() {
             <h1 className="font-heading text-3xl md:text-4xl font-bold text-brown-900 leading-tight">
               1 Gallon Brewing Kit
             </h1>
-            <p className="text-2xl font-bold text-brown-900 mt-3">$34.99</p>
+            <p className="text-2xl font-bold text-brown-900 mt-3">$59.99</p>
             <p className="text-brown-700 mt-4 leading-relaxed">
               {product.description}
             </p>

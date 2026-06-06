@@ -6,7 +6,7 @@ Simple, honest pricing. No subscriptions, no hidden fees.
 
 | Kit | Price |
 |-----|-------|
-| 1-Gallon Beginner Brewing Kit | $34.99 |
+| 1-Gallon Beginner Brewing Kit | $59.99 |
 | 5-Gallon Beginner Brewing Kit | $105.00 |
 
 ## What's Included
