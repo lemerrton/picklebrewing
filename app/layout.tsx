@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Lora, Nunito } from "next/font/google";
+import Script from "next/script";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
+
+const GA_ID = "G-EZ0NGG3YFY";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -79,6 +82,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${lora.variable} ${nunito.variable}`}>
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+      </head>
       <body className="min-h-screen flex flex-col antialiased">
         <JsonLd data={organizationJsonLd} />
         <Nav />
