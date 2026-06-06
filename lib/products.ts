@@ -29,7 +29,7 @@ export const products: Product[] = [
     ],
     size: "1 Gallon",
     sku: "PB-1GAL-KIT",
-    stripeUrl: "https://buy.stripe.com/aFa4gzcyx1cN8pUclde3e01",
+    stripeUrl: "https://buy.stripe.com/00w7sL9ml08JdKe991e3e03",
   },
   {
     name: "5-Gallon Brewing Starter Kit",
