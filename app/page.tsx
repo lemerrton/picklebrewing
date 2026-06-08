@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { PackageOpen, ShieldCheck, Gift } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
+import Stars from "@/components/Stars";
+import { getReviews, RATING_VALUE } from "@/lib/reviews";
 
 const webSiteJsonLd = {
   "@context": "https://schema.org",
@@ -12,11 +14,21 @@ const webSiteJsonLd = {
     "The best beginner brewing kit for first-time brewers. 1 gallon and 5 gallon starter fermentation kits that ship everywhere.",
 };
 
+const oneGallonReviews = getReviews("1-gallon-brewing-kit");
+const fiveGallonReviews = getReviews("5-gallon-brewing-kit");
+
+const featuredReviews = [
+  { ...oneGallonReviews[1], tag: "Birthday gift for brother" },
+  { ...oneGallonReviews[3], tag: "Father's Day gift" },
+  { ...fiveGallonReviews[2], tag: "Gift for husband" },
+];
+
 export default function Home() {
   return (
     <>
       <JsonLd data={webSiteJsonLd} />
 
+      {/* 1. HERO */}
       <section className="bg-cream" aria-label="Hero">
         <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
           <div className="text-center max-w-2xl mx-auto mb-10">
@@ -48,6 +60,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 2. OBJECTION HANDLER */}
       <section className="bg-white" aria-label="Why our kit doesn't end up in a closet">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-brown-900 leading-tight">
@@ -62,6 +75,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 3. PRODUCT CARDS */}
       <section className="max-w-5xl mx-auto px-6 py-16" aria-label="Kit options">
         <h2 className="font-heading text-3xl font-bold text-brown-900 text-center mb-4">
           Small Batch Brewing Kits for Every Level
@@ -72,7 +86,13 @@ export default function Home() {
           makes sense.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
-          <Link href="/1-gallon-brewing-kit" className="bg-white border border-tan-400 rounded-2xl p-6 text-center hover:shadow-md transition-shadow block">
+          <Link
+            href="/1-gallon-brewing-kit"
+            className="relative bg-white border border-tan-400 rounded-2xl p-6 text-center hover:shadow-md transition-shadow block"
+          >
+            <span className="absolute top-3 right-3 bg-amber-500 text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full shadow-sm">
+              Most Gifted
+            </span>
             <div className="aspect-video w-full rounded-xl overflow-hidden bg-white flex items-center justify-center">
               <Image
                 src="/images/1-gallon-kit.png"
@@ -94,7 +114,10 @@ export default function Home() {
             </span>
           </Link>
 
-          <Link href="/5-gallon-brewing-kit" className="bg-white border border-tan-400 rounded-2xl p-6 text-center hover:shadow-md transition-shadow block">
+          <Link
+            href="/5-gallon-brewing-kit"
+            className="bg-white border border-tan-400 rounded-2xl p-6 text-center hover:shadow-md transition-shadow block"
+          >
             <div className="aspect-video w-full rounded-xl overflow-hidden bg-white flex items-center justify-center">
               <Image
                 src="/images/5-gallon-kit.png"
@@ -118,6 +141,97 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 4. FIRST BATCH GUARANTEE */}
+      <section className="bg-cream" aria-label="First Batch Guarantee">
+        <div className="max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brown-900 mb-6">
+            <ShieldCheck className="w-8 h-8 text-white" strokeWidth={2} aria-hidden="true" />
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-brown-900 leading-tight">
+            First Batch Guarantee
+          </h2>
+          <p className="text-brown-700 mt-5 text-lg leading-relaxed">
+            We&apos;re so confident in our kits that we back every order with
+            this promise: if their first batch doesn&apos;t turn out, we&apos;ll
+            send replacement ingredients free and walk them through it
+            personally. No questions, no fine print.
+          </p>
+          <div className="mt-8 grid sm:grid-cols-3 gap-4 text-left">
+            {[
+              {
+                title: "Step-by-step support",
+                body: "Email us anytime — we'll troubleshoot in plain English.",
+              },
+              {
+                title: "Free replacement ingredients",
+                body: "If batch #1 doesn't work, batch #2 is on us.",
+              },
+              {
+                title: "30-day guarantee",
+                body: "Plenty of time to brew, taste, and decide.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-white rounded-xl p-4 border border-tan-400">
+                <p className="font-semibold text-brown-900 text-sm">
+                  {item.title}
+                </p>
+                <p className="text-brown-700 text-xs mt-1 leading-relaxed">
+                  {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. REVIEWS / SOCIAL PROOF */}
+      <section className="max-w-5xl mx-auto px-6 py-16" aria-label="Customer reviews">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-3xl font-bold text-brown-900">
+            What Gift-Givers Are Saying
+          </h2>
+          <div className="mt-4 flex items-center justify-center gap-3">
+            <Stars rating={RATING_VALUE} size="md" />
+            <span className="text-lg font-bold text-brown-900">
+              {RATING_VALUE.toFixed(1)}
+            </span>
+            <span className="text-sm text-brown-700">out of 5</span>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-5">
+          {featuredReviews.map((review, idx) => (
+            <div
+              key={idx}
+              className="bg-cream rounded-2xl p-6 flex flex-col"
+            >
+              <div className="flex items-center gap-2">
+                <Stars rating={review.rating} />
+                <span className="text-[10px] font-bold text-tan-600 uppercase tracking-wide">
+                  {review.tag}
+                </span>
+              </div>
+              <p className="mt-3 text-brown-900 leading-relaxed text-sm flex-1">
+                &ldquo;{review.body}&rdquo;
+              </p>
+              <p className="mt-4 text-xs font-semibold text-brown-700 uppercase tracking-wide">
+                Verified buyer
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <Link
+            href="/1-gallon-brewing-kit#reviews"
+            className="text-sm font-semibold text-brown-900 underline hover:no-underline"
+          >
+            Read all reviews →
+          </Link>
+        </div>
+      </section>
+
+      {/* 6. WHY BREWKIT LAB */}
       <section className="bg-tan-200" aria-label="Why BrewKit Lab">
         <div className="max-w-5xl mx-auto px-6 py-16">
           <h2 className="font-heading text-3xl font-bold text-brown-900 text-center mb-10">
@@ -157,6 +271,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 7. LEARN TO BREW */}
       <section className="max-w-5xl mx-auto px-6 py-16" aria-label="Learn to brew">
         <h2 className="font-heading text-3xl font-bold text-brown-900 text-center mb-4">
           Learn to Brew
