@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { PackageOpen, ShieldCheck, Gift } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 
 const webSiteJsonLd = {
@@ -125,27 +126,30 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Beginner-Friendly",
-                text: "Every home brewing kit for beginners comes with clear, step-by-step instructions. No jargon, no guesswork — just brew.",
+                Icon: PackageOpen,
+                title: "Opens and Brews Same-Day",
+                text: "No experience needed. They'll be brewing their first batch the week it arrives, not reading a manual.",
               },
               {
-                title: "Quality Equipment",
-                text: "Glass fermenters, real airlocks, sanitizer included. Our starter fermentation kits use the same gear experienced brewers trust.",
+                Icon: ShieldCheck,
+                title: "Real Gear They'll Keep Using",
+                text: "Glass fermenters, real airlocks, sanitizer included — the same equipment serious brewers trust.",
               },
               {
-                title: "Ships Everywhere",
-                text: "No matter where you are, we'll get your small batch brewing kit to your door. Fast shipping, careful packaging.",
+                Icon: Gift,
+                title: "Gift-Ready, Ships Fast",
+                text: "Arrives clean, complete, and ready to wrap. Order in time for the big day.",
               },
-            ].map((item) => (
-              <div key={item.title} className="text-center">
-                <div className="w-14 h-14 bg-tan-600 rounded-full mx-auto flex items-center justify-center text-white text-xl font-bold">
-                  {item.title[0]}
+            ].map(({ Icon, title, text }) => (
+              <div key={title} className="text-center">
+                <div className="w-14 h-14 bg-tan-600 rounded-full mx-auto flex items-center justify-center text-white">
+                  <Icon className="w-7 h-7" strokeWidth={2} aria-hidden="true" />
                 </div>
                 <h3 className="font-heading text-lg font-bold text-brown-900 mt-4">
-                  {item.title}
+                  {title}
                 </h3>
                 <p className="text-brown-700 mt-2 text-sm leading-relaxed">
-                  {item.text}
+                  {text}
                 </p>
               </div>
             ))}
