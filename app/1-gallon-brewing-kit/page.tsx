@@ -1,8 +1,39 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Star } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
-import { products, productJsonLd } from "@/lib/products";
+import { products, productJsonLd, type Product } from "@/lib/products";
+
+const RATING_VALUE = 4.8;
+const REVIEW_COUNT = 1;
+const REVIEW_BODY =
+  "I've brewed my first couple of batches and I LOVE it, I might upgrade to the 5 gallon jug lol.";
+
+function productWithReviewJsonLd(product: Product) {
+  return {
+    ...productJsonLd(product),
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: RATING_VALUE.toFixed(1),
+      reviewCount: REVIEW_COUNT,
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: [
+      {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: { "@type": "Person", name: "Verified buyer" },
+        reviewBody: REVIEW_BODY,
+      },
+    ],
+  };
+}
 
 export const metadata: Metadata = {
   title: "1 Gallon Brewing Kit — Perfect for First-Time Brewers",
@@ -21,7 +52,7 @@ export default function OneGallonBrewingKit() {
 
   return (
     <>
-      <JsonLd data={productJsonLd(product)} />
+      <JsonLd data={productWithReviewJsonLd(product)} />
 
       <article className="max-w-3xl mx-auto px-6 py-16">
         <div className="flex flex-col md:flex-row gap-10 items-start">
@@ -42,6 +73,44 @@ export default function OneGallonBrewingKit() {
             <h1 className="font-heading text-3xl md:text-4xl font-bold text-brown-900 leading-tight">
               1 Gallon Brewing Kit
             </h1>
+
+            <a
+              href="#reviews"
+              className="mt-3 inline-flex items-center gap-2 group"
+              aria-label={`Rated ${RATING_VALUE} out of 5 stars, ${REVIEW_COUNT} review`}
+            >
+              <span className="flex items-center" aria-hidden="true">
+                {[0, 1, 2, 3, 4].map((i) => {
+                  const filled = i < Math.floor(RATING_VALUE);
+                  const partial =
+                    i === Math.floor(RATING_VALUE) && RATING_VALUE % 1 !== 0;
+                  return (
+                    <span key={i} className="relative w-4 h-4">
+                      <Star className="w-4 h-4 text-tan-400 fill-tan-400" />
+                      {(filled || partial) && (
+                        <span
+                          className="absolute inset-0 overflow-hidden"
+                          style={{
+                            width: filled
+                              ? "100%"
+                              : `${(RATING_VALUE % 1) * 100}%`,
+                          }}
+                        >
+                          <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
+                        </span>
+                      )}
+                    </span>
+                  );
+                })}
+              </span>
+              <span className="text-sm font-semibold text-brown-900">
+                {RATING_VALUE.toFixed(1)}
+              </span>
+              <span className="text-sm text-brown-700 group-hover:underline">
+                ({REVIEW_COUNT} review)
+              </span>
+            </a>
+
             <p className="text-2xl font-bold text-brown-900 mt-3">$59.99</p>
             <p className="text-brown-700 mt-4 leading-relaxed">
               {product.description}
@@ -174,6 +243,63 @@ export default function OneGallonBrewingKit() {
                 <p className="text-brown-700 text-sm mt-1">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section id="reviews" className="mt-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl font-bold text-brown-900">
+            What Customers Are Saying
+          </h2>
+          <div className="mt-4 flex items-center gap-3">
+            <span className="flex items-center" aria-hidden="true">
+              {[0, 1, 2, 3, 4].map((i) => {
+                const filled = i < Math.floor(RATING_VALUE);
+                const partial =
+                  i === Math.floor(RATING_VALUE) && RATING_VALUE % 1 !== 0;
+                return (
+                  <span key={i} className="relative w-5 h-5">
+                    <Star className="w-5 h-5 text-tan-400 fill-tan-400" />
+                    {(filled || partial) && (
+                      <span
+                        className="absolute inset-0 overflow-hidden"
+                        style={{
+                          width: filled
+                            ? "100%"
+                            : `${(RATING_VALUE % 1) * 100}%`,
+                        }}
+                      >
+                        <Star className="w-5 h-5 text-amber-500 fill-amber-500" />
+                      </span>
+                    )}
+                  </span>
+                );
+              })}
+            </span>
+            <span className="text-lg font-bold text-brown-900">
+              {RATING_VALUE.toFixed(1)}
+            </span>
+            <span className="text-sm text-brown-700">
+              · Based on {REVIEW_COUNT} review
+            </span>
+          </div>
+
+          <div className="mt-6 bg-cream rounded-2xl p-6">
+            <div className="flex items-center gap-2">
+              <span className="flex items-center" aria-hidden="true">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star
+                    key={i}
+                    className="w-4 h-4 text-amber-500 fill-amber-500"
+                  />
+                ))}
+              </span>
+              <span className="text-xs font-semibold text-brown-700 uppercase tracking-wide">
+                Verified buyer
+              </span>
+            </div>
+            <p className="mt-3 text-brown-900 leading-relaxed">
+              &ldquo;{REVIEW_BODY}&rdquo;
+            </p>
           </div>
         </section>
 
