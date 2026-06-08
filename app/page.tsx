@@ -166,9 +166,9 @@ export default function Home() {
         </p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[
-            { href: "/how-to-brew-mead", label: "How to Brew Mead" },
+            { href: "/how-to-brew-beer", label: "Your First Beer in 7 Steps" },
+            { href: "/how-long-does-beer-take", label: "How Long Does Beer Take to Brew?" },
             { href: "/fermentation-guide", label: "Fermentation Guide" },
-            { href: "/how-long-does-mead-take", label: "How Long Does Mead Take?" },
             { href: "/blog/how-to-start-brewing-at-home", label: "Start Brewing at Home" },
             { href: "/blog/common-fermentation-mistakes", label: "Fermentation Mistakes" },
             { href: "/blog/why-airlock-bubbles", label: "Why Airlocks Bubble" },
