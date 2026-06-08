@@ -20,30 +20,44 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-brown-900 leading-tight">
-              The Best Beginner Brewing Kit — Start Your First Brew Today
+              The Gift Every Beer Lover Secretly Wants
             </h1>
             <p className="text-brown-700 mt-4 text-lg">
-              Starter fermentation kits for first-time brewers. Everything you
-              need in one box — no experience required, no jargon, just good
-              brewing.
+              Give them the kit that turns &quot;I should try brewing&quot; into
+              their new favorite hobby — everything in one box, plain-English
+              instructions, and a first batch we guarantee turns out great.
             </p>
             <Link
               href="/shop"
               className="inline-block mt-6 bg-brown-900 text-white font-body font-semibold py-3 px-8 rounded-lg hover:bg-brown-700 transition-colors"
             >
-              Shop Kits
+              Find Their Kit
             </Link>
           </div>
           <div className="aspect-video w-full rounded-xl overflow-hidden bg-white border border-tan-400">
             <Image
               src="/images/brewing-setup.png"
-              alt="Beginner home brewing setup with glass fermenter, fermentation bucket with airlock, priming sugar packets, and hops"
+              alt="Two friends cheering with glasses of homebrew next to a 1-gallon BrewKit Lab fermenter and wrapped gift box"
               width={1456}
               height={1080}
               priority
               className="object-cover w-full h-full"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white" aria-label="Why our kit doesn't end up in a closet">
+        <div className="max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-brown-900 leading-tight">
+            Most Brewing Kits End Up in a Closet. Ours Don&apos;t.
+          </h2>
+          <p className="text-brown-700 mt-5 text-lg leading-relaxed">
+            The #1 reason a gifted brewing kit goes unused is that it&apos;s
+            confusing and intimidating. We fixed that. Every box opens to one
+            plain-English instruction card — no homebrew jargon, no guessing —
+            so they brew their first batch the same week they unwrap it.
+          </p>
         </div>
       </section>
 
