@@ -77,7 +77,7 @@ export default function OneGallonBrewingKit() {
             <a
               href="#reviews"
               className="mt-3 inline-flex items-center gap-2 group"
-              aria-label={`Rated ${RATING_VALUE} out of 5 stars, ${REVIEW_COUNT} review`}
+              aria-label={`Rated ${RATING_VALUE} out of 5 stars`}
             >
               <span className="flex items-center" aria-hidden="true">
                 {[0, 1, 2, 3, 4].map((i) => {
@@ -103,11 +103,8 @@ export default function OneGallonBrewingKit() {
                   );
                 })}
               </span>
-              <span className="text-sm font-semibold text-brown-900">
+              <span className="text-sm font-semibold text-brown-900 group-hover:underline">
                 {RATING_VALUE.toFixed(1)}
-              </span>
-              <span className="text-sm text-brown-700 group-hover:underline">
-                ({REVIEW_COUNT} review)
               </span>
             </a>
 
@@ -278,9 +275,7 @@ export default function OneGallonBrewingKit() {
             <span className="text-lg font-bold text-brown-900">
               {RATING_VALUE.toFixed(1)}
             </span>
-            <span className="text-sm text-brown-700">
-              · Based on {REVIEW_COUNT} review
-            </span>
+            <span className="text-sm text-brown-700">out of 5</span>
           </div>
 
           <div className="mt-6 bg-cream rounded-2xl p-6">
