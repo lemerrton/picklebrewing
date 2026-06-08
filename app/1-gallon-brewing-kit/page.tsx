@@ -6,18 +6,19 @@ import Stars from "@/components/Stars";
 import { products, productJsonLd, type Product } from "@/lib/products";
 import {
   getReviews,
-  RATING_VALUE,
+  getRating,
   aggregateRatingSchema,
   reviewSchema,
 } from "@/lib/reviews";
 
 const SLUG = "1-gallon-brewing-kit";
+const RATING_VALUE = getRating(SLUG);
 
 function productWithReviewJsonLd(product: Product) {
   const reviews = getReviews(SLUG);
   return {
     ...productJsonLd(product),
-    aggregateRating: aggregateRatingSchema(reviews),
+    aggregateRating: aggregateRatingSchema(SLUG),
     review: reviews.map(reviewSchema),
   };
 }

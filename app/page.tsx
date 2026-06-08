@@ -3,7 +3,9 @@ import Image from "next/image";
 import { PackageOpen, ShieldCheck, Gift } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import Stars from "@/components/Stars";
-import { getReviews, RATING_VALUE } from "@/lib/reviews";
+import { getReviews, getRating } from "@/lib/reviews";
+
+const FEATURED_RATING = getRating("1-gallon-brewing-kit");
 
 const webSiteJsonLd = {
   "@context": "https://schema.org",
@@ -191,9 +193,9 @@ export default function Home() {
             What Gift-Givers Are Saying
           </h2>
           <div className="mt-4 flex items-center justify-center gap-3">
-            <Stars rating={RATING_VALUE} size="md" />
+            <Stars rating={FEATURED_RATING} size="md" />
             <span className="text-lg font-bold text-brown-900">
-              {RATING_VALUE.toFixed(1)}
+              {FEATURED_RATING.toFixed(1)}
             </span>
             <span className="text-sm text-brown-700">out of 5</span>
           </div>
