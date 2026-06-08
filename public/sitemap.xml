@@ -26,6 +26,12 @@
   </url>
 
   <url>
+    <loc>https://brewkitlab.com/5-gallon-brewing-kit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://brewkitlab.com/how-to-brew-mead</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -94,7 +94,7 @@ export default function Home() {
             </span>
           </Link>
 
-          <Link href="/shop" className="bg-white border border-tan-400 rounded-2xl p-6 text-center hover:shadow-md transition-shadow block">
+          <Link href="/5-gallon-brewing-kit" className="bg-white border border-tan-400 rounded-2xl p-6 text-center hover:shadow-md transition-shadow block">
             <div className="aspect-video w-full rounded-xl overflow-hidden bg-white flex items-center justify-center">
               <Image
                 src="/images/5-gallon-kit.png"

@@ -52,7 +52,12 @@ export default function Shop() {
               </div>
               <div className="px-6 pb-6">
                 <h2 className="font-heading text-xl font-bold text-brown-900">
-                  {product.name}
+                  <Link
+                    href={`/${product.slug}`}
+                    className="hover:underline"
+                  >
+                    {product.name}
+                  </Link>
                 </h2>
                 <p className="text-brown-700 mt-2 text-sm leading-relaxed">
                   {product.description}

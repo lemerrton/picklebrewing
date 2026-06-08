@@ -11,7 +11,7 @@ import {
   reviewSchema,
 } from "@/lib/reviews";
 
-const SLUG = "1-gallon-brewing-kit";
+const SLUG = "5-gallon-brewing-kit";
 
 function productWithReviewJsonLd(product: Product) {
   const reviews = getReviews(SLUG);
@@ -23,20 +23,20 @@ function productWithReviewJsonLd(product: Product) {
 }
 
 export const metadata: Metadata = {
-  title: "1 Gallon Brewing Kit — Perfect for First-Time Brewers",
+  title: "5 Gallon Brewing Kit — Brew Bigger Batches at Home",
   description:
-    "Our 1 gallon brewing kit is the best small batch brewing kit for beginners. Includes glass fermenter, airlock, sanitizer, and step-by-step instructions. $59.99, ships everywhere.",
-  alternates: { canonical: "https://brewkitlab.com/1-gallon-brewing-kit" },
+    "Our 5 gallon brewing kit lets you scale up your homebrew without scaling up the complexity. Includes glass carboy, airlock, yeast, sanitizer, and clear instructions. $105.00, ships everywhere.",
+  alternates: { canonical: "https://brewkitlab.com/5-gallon-brewing-kit" },
   openGraph: {
-    title: "1 Gallon Brewing Kit — BrewKit Lab",
+    title: "5 Gallon Brewing Kit — BrewKit Lab",
     description:
-      "The best small batch brewing kit for beginners. Everything you need for $59.99.",
-    url: "https://brewkitlab.com/1-gallon-brewing-kit",
+      "Brew full-size batches at home with our 5 gallon starter kit. Everything you need for $105.00.",
+    url: "https://brewkitlab.com/5-gallon-brewing-kit",
   },
 };
 
-export default function OneGallonBrewingKit() {
-  const product = products[0];
+export default function FiveGallonBrewingKit() {
+  const product = products[1];
   const reviews = getReviews(SLUG);
 
   return (
@@ -49,7 +49,7 @@ export default function OneGallonBrewingKit() {
             <div className="bg-white border border-tan-400 rounded-2xl p-4">
               <Image
                 src={product.imagePath}
-                alt="1 gallon brewing kit with glass fermenter and airlock"
+                alt="5 gallon glass carboy brewing kit with airlock"
                 width={500}
                 height={500}
                 className="object-contain w-full"
@@ -60,7 +60,7 @@ export default function OneGallonBrewingKit() {
 
           <div className="flex-1">
             <h1 className="font-heading text-3xl md:text-4xl font-bold text-brown-900 leading-tight">
-              1 Gallon Brewing Kit
+              5 Gallon Brewing Kit
             </h1>
 
             <a
@@ -74,7 +74,9 @@ export default function OneGallonBrewingKit() {
               </span>
             </a>
 
-            <p className="text-2xl font-bold text-brown-900 mt-3">$59.99</p>
+            <p className="text-2xl font-bold text-brown-900 mt-3">
+              ${product.price.toFixed(2)}
+            </p>
             <p className="text-brown-700 mt-4 leading-relaxed">
               {product.description}
             </p>
@@ -120,79 +122,25 @@ export default function OneGallonBrewingKit() {
 
         <section className="mt-16">
           <h2 className="font-heading text-2xl font-bold text-brown-900">
-            See What&apos;s In the Box
-          </h2>
-          <p className="text-brown-700 mt-2 text-sm">
-            Every kit includes a glass fermenter, airlock, yeast, hydrometer,
-            and clear instructions.
-          </p>
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
-              <div className="aspect-square">
-                <Image
-                  src="/images/1-gallon-yeast.png"
-                  alt="SafAle US-05 dry ale yeast packet included in brewing kit"
-                  width={500}
-                  height={500}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
-                SafAle US-05 dry ale yeast
-              </p>
-            </div>
-            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
-              <div className="aspect-square">
-                <Image
-                  src="/images/1-gallon-hydrometer.png"
-                  alt="Triple scale hydrometer for measuring fermentation progress"
-                  width={500}
-                  height={500}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
-                Triple-scale hydrometer
-              </p>
-            </div>
-            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
-              <div className="aspect-square">
-                <Image
-                  src="/images/1-gallon-fermenting.png"
-                  alt="1 gallon glass fermenter with active fermentation and airlock"
-                  width={500}
-                  height={500}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
-                Active fermentation in action
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mt-16">
-          <h2 className="font-heading text-2xl font-bold text-brown-900">
-            Why Start With a 1 Gallon Brewing Kit?
+            Ready to Scale Up Your Brewing?
           </h2>
           <div className="mt-4 space-y-4 text-brown-700 leading-relaxed">
             <p>
-              A 1 gallon brewing kit is the ideal small batch brewing kit for
-              anyone brewing for the first time. It fits on your kitchen
-              counter, uses less ingredients (so mistakes cost less), and the
-              whole process is manageable from start to finish.
+              The 5 gallon brewing kit is the natural next step for anyone who
+              loved their first 1 gallon batch and wants to brew enough to
+              share. A 5 gallon batch yields roughly 50 standard bottles —
+              plenty for friends, family, or a long weekend.
             </p>
             <p>
-              This is the same starter fermentation kit we recommend in our{" "}
+              Same beginner-friendly approach as our{" "}
               <Link
-                href="/best-beginner-brewing-kit"
+                href="/1-gallon-brewing-kit"
                 className="underline hover:no-underline text-brown-900"
               >
-                best beginner brewing kit guide
+                1 gallon brewing kit
               </Link>
-              . It&apos;s perfect for brewing beer, mead, cider, or anything
-              else you want to try fermenting.
+              , just bigger results. The included yeast and step-by-step
+              instructions take all the guesswork out of brewing at scale.
             </p>
           </div>
         </section>
@@ -205,19 +153,19 @@ export default function OneGallonBrewingKit() {
             {[
               {
                 name: "Beer",
-                desc: "Ales, stouts, IPAs — any beer style works at 1 gallon.",
+                desc: "Pale ales, IPAs, stouts — full-size batches that are perfect for sharing.",
               },
               {
                 name: "Mead",
-                desc: "Honey wine is one of the easiest first brews. Check our mead guide.",
+                desc: "A 5 gallon honey mead batch yields plenty for aging and gifting bottles.",
               },
               {
                 name: "Cider",
-                desc: "Apple cider + yeast = hard cider. It's that simple.",
+                desc: "Hard cider scales beautifully to 5 gallons. Great for fall and holiday gatherings.",
               },
               {
-                name: "Kombucha",
-                desc: "Fermented tea is a great non-alcoholic option.",
+                name: "Wine",
+                desc: "Country wines and fruit wines work great in a 5 gallon carboy setup.",
               },
             ].map((item) => (
               <div key={item.name} className="bg-cream rounded-xl p-4">
@@ -264,10 +212,10 @@ export default function OneGallonBrewingKit() {
           <ul className="mt-3 space-y-2 text-sm">
             <li>
               <Link
-                href="/how-to-brew-mead"
+                href="/1-gallon-brewing-kit"
                 className="text-brown-900 underline hover:no-underline"
               >
-                How to Brew Mead →
+                Start smaller: 1 Gallon Brewing Kit →
               </Link>
             </li>
             <li>
@@ -280,10 +228,10 @@ export default function OneGallonBrewingKit() {
             </li>
             <li>
               <Link
-                href="/how-long-does-mead-take"
+                href="/how-to-brew-mead"
                 className="text-brown-900 underline hover:no-underline"
               >
-                How Long Does Mead Take? →
+                How to Brew Mead →
               </Link>
             </li>
             <li>
