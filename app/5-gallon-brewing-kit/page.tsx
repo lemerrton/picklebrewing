@@ -63,16 +63,23 @@ export default function FiveGallonBrewingKit() {
               5 Gallon Brewing Kit
             </h1>
 
-            <a
-              href="#reviews"
-              className="mt-3 inline-flex items-center gap-2 group"
-              aria-label={`Rated ${RATING_VALUE} out of 5 stars`}
-            >
-              <Stars rating={RATING_VALUE} />
-              <span className="text-sm font-semibold text-brown-900 group-hover:underline">
-                {RATING_VALUE.toFixed(1)}
+            <div className="mt-3 flex items-center gap-3 flex-wrap">
+              <span
+                className="inline-flex items-center gap-2"
+                aria-label={`Rated ${RATING_VALUE} out of 5 stars`}
+              >
+                <Stars rating={RATING_VALUE} />
+                <span className="text-sm font-semibold text-brown-900">
+                  {RATING_VALUE.toFixed(1)}
+                </span>
               </span>
-            </a>
+              <a
+                href="#reviews"
+                className="text-sm font-semibold text-brown-900 underline hover:no-underline"
+              >
+                Read reviews →
+              </a>
+            </div>
 
             <p className="text-2xl font-bold text-brown-900 mt-3">
               ${product.price.toFixed(2)}
