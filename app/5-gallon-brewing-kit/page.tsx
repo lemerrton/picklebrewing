@@ -130,6 +130,46 @@ export default function FiveGallonBrewingKit() {
 
         <section className="mt-16">
           <h2 className="font-heading text-2xl font-bold text-brown-900">
+            See What&apos;s In the Box
+          </h2>
+          <p className="text-brown-700 mt-2 text-sm">
+            Every kit includes a 5-gallon glass carboy, airlock, yeast,
+            hydrometer, sanitizer, and clear instructions.
+          </p>
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
+              <div className="aspect-square">
+                <Image
+                  src="/images/5-gallon-yeast.png"
+                  alt="SafAle US-05 dry ale yeast packet included in 5 gallon brewing kit"
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
+                SafAle US-05 dry ale yeast
+              </p>
+            </div>
+            <div className="bg-white border border-tan-400 rounded-2xl overflow-hidden">
+              <div className="aspect-square">
+                <Image
+                  src="/images/5-gallon-hydrometer.png"
+                  alt="Triple scale hydrometer for measuring fermentation progress"
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <p className="text-xs text-brown-700 px-3 py-2 text-center font-medium">
+                Triple-scale hydrometer
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="font-heading text-2xl font-bold text-brown-900">
             Ready to Scale Up Your Brewing?
           </h2>
           <div className="mt-4 space-y-4 text-brown-700 leading-relaxed">
