@@ -19,6 +19,7 @@ Ready to make more? This kit has you covered.
 ### Includes:
 - 5-gallon fermenting vessel
 - Airlock and stopper
+- SafAle US-05 dry ale yeast
 - Sanitizer packet
 - Step-by-step instructions
 

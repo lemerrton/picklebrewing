@@ -43,6 +43,7 @@ export const products: Product[] = [
     includes: [
       "5-gallon glass carboy fermenting vessel",
       "Airlock and stopper",
+      "SafAle US-05 dry ale yeast",
       "Sanitizer packet",
       "Step-by-step beginner instructions",
     ],
