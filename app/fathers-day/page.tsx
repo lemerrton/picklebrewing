@@ -67,10 +67,16 @@ export default function FathersDayAdvertorial() {
 
         {/* HERO IMAGE — payoff moment */}
         <figure className="mb-10">
-          <ImageSlot
-            label="Dad laughing at kitchen counter holding glass of homemade beer (the payoff moment)"
-            aspectRatio="aspect-video"
-          />
+          <div className="aspect-[4/5] sm:aspect-video w-full rounded-xl overflow-hidden bg-white border border-tan-400">
+            <Image
+              src="/images/fathers-day-hero.png"
+              alt="Dad laughing in his kitchen, holding up a glass of his own homemade amber ale next to a bottle labeled 'Dad's Homebrew'"
+              width={896}
+              height={1180}
+              priority
+              className="object-cover w-full h-full"
+            />
+          </div>
           <figcaption className="text-xs text-tan-600 text-center mt-2 italic">
             The moment that makes it worth it.
           </figcaption>
