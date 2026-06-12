@@ -19,8 +19,24 @@ export default function ThankYou() {
       <Script id="meta-pixel-purchase" strategy="afterInteractive">
         {`
           if (typeof window !== 'undefined') {
-            if (window.fbq) window.fbq('track', 'Purchase', { currency: 'USD' });
-            if (window.ttq) window.ttq.track('CompletePayment', { currency: 'USD' });
+            if (window.fbq) {
+              window.fbq('track', 'Purchase', {
+                value: 59.99,
+                currency: 'USD',
+                contents: [{ id: 'PB-1GAL-KIT', quantity: 1 }],
+                content_ids: ['PB-1GAL-KIT'],
+                content_type: 'product',
+              });
+            }
+            if (window.ttq) {
+              window.ttq.track('CompletePayment', {
+                value: 59.99,
+                currency: 'USD',
+                content_id: 'PB-1GAL-KIT',
+                quantity: 1,
+                content_type: 'product',
+              });
+            }
           }
         `}
       </Script>
