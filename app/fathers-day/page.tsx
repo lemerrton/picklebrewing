@@ -121,10 +121,15 @@ export default function FathersDayAdvertorial() {
           </div>
 
           <figure className="my-8">
-            <ImageSlot
-              label="Flat-lay of failed dad gifts: tie, 'World's Okayest Dad' mug, gift card, koozie"
-              aspectRatio="aspect-video"
-            />
+            <div className="aspect-video w-full rounded-xl overflow-hidden bg-white border border-tan-400">
+              <Image
+                src="/images/failed-gifts.png"
+                alt="The lineup of polite, forgettable dad gifts: a 'World's Okayest Dad' mug, a Happy Birthday gift card, and a red beer koozie"
+                width={1456}
+                height={1080}
+                className="object-cover w-full h-full"
+              />
+            </div>
             <figcaption className="text-xs text-tan-600 text-center mt-2 italic">
               The lineup of polite, forgettable gifts.
             </figcaption>
