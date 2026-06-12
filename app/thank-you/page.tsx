@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Thank You for Your Order",
@@ -15,6 +16,15 @@ export const metadata: Metadata = {
 export default function ThankYou() {
   return (
     <section className="max-w-2xl mx-auto px-6 py-20">
+      <Script id="meta-pixel-purchase" strategy="afterInteractive">
+        {`
+          if (typeof window !== 'undefined') {
+            if (window.fbq) window.fbq('track', 'Purchase', { currency: 'USD' });
+            if (window.ttq) window.ttq.track('CompletePayment', { currency: 'USD' });
+          }
+        `}
+      </Script>
+
       <div className="text-center">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cream mb-6">
           <svg

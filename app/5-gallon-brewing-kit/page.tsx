@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import JsonLd from "@/components/JsonLd";
 import Stars from "@/components/Stars";
+import BuyNowButton from "@/components/BuyNowButton";
 import { products, productJsonLd, type Product } from "@/lib/products";
 import {
   getReviews,
@@ -43,6 +45,15 @@ export default function FiveGallonBrewingKit() {
   return (
     <>
       <JsonLd data={productWithReviewJsonLd(product)} />
+
+      <Script id="meta-pixel-viewcontent-5gal" strategy="afterInteractive">
+        {`
+          if (typeof window !== 'undefined') {
+            if (window.fbq) window.fbq('track', 'ViewContent', { content_name: '${product.name}', content_ids: ['${product.sku}'], content_type: 'product', value: ${product.price}, currency: 'USD' });
+            if (window.ttq) window.ttq.track('ViewContent', { content_id: '${product.sku}', content_name: '${product.name}', content_type: 'product', value: ${product.price}, currency: 'USD', quantity: 1 });
+          }
+        `}
+      </Script>
 
       <article className="max-w-3xl mx-auto px-6 py-16">
         <div className="flex flex-col md:flex-row gap-10 items-start">
@@ -107,14 +118,15 @@ export default function FiveGallonBrewingKit() {
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <a
+              <BuyNowButton
                 href={product.stripeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                sku={product.sku}
+                name={product.name}
+                price={product.price}
                 className="inline-block bg-brown-900 text-white font-body font-semibold py-3 px-8 rounded-lg hover:bg-brown-700 transition-colors"
               >
                 Buy Now — ${product.price.toFixed(2)}
-              </a>
+              </BuyNowButton>
               <a
                 href={`mailto:gentlevoyage.assistance@gmail.com?subject=Order Inquiry — ${product.name}`}
                 className="inline-block bg-white border border-tan-400 text-brown-900 font-body font-semibold py-3 px-8 rounded-lg hover:bg-cream transition-colors"

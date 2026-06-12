@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import BuyNowButton from "@/components/BuyNowButton";
 import { products, productJsonLd } from "@/lib/products";
 
 export const metadata: Metadata = {
@@ -83,14 +84,15 @@ export default function Shop() {
                   </ul>
                 </div>
 
-                <a
+                <BuyNowButton
                   href={product.stripeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  sku={product.sku}
+                  name={product.name}
+                  price={product.price}
                   className="mt-6 block text-center bg-brown-900 text-white font-body font-semibold py-3 px-6 rounded-lg hover:bg-brown-700 transition-colors"
                 >
                   Buy Now — ${product.price.toFixed(2)}
-                </a>
+                </BuyNowButton>
                 <p className="mt-2 text-xs text-tan-600 text-center">
                   Secure checkout via Stripe
                 </p>
