@@ -286,24 +286,6 @@ export default function BestFathersDayGift() {
               </strong>
             </p>
 
-            <div className="mt-6 flex items-center gap-4 bg-cream rounded-2xl p-5 border border-tan-400">
-              <div className="shrink-0 w-14 h-14 rounded-full bg-brown-900 flex items-center justify-center">
-                <ShieldCheck
-                  className="w-7 h-7 text-white"
-                  strokeWidth={2}
-                  aria-hidden="true"
-                />
-              </div>
-              <div>
-                <p className="font-heading font-bold text-brown-900">
-                  First Batch Guarantee
-                </p>
-                <p className="text-sm text-brown-700 mt-0.5">
-                  Free replacement ingredients if batch #1 doesn&apos;t turn
-                  out. 30-day window.
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* Honest close */}
