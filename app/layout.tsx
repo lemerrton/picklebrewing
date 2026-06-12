@@ -8,7 +8,7 @@ import "./globals.css";
 
 const GA_ID = "G-EZ0NGG3YFY";
 const TIKTOK_PIXEL_ID = "D8KAT6JC77U48KTDT4EG";
-const META_PIXEL_ID = "1512752546418045";
+const META_PIXEL_ID = "1895112354508553";
 
 const lora = Lora({
   variable: "--font-lora",
