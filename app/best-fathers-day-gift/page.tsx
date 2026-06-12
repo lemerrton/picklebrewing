@@ -206,6 +206,39 @@ export default function BestFathersDayGift() {
           )}
         </section>
 
+        {/* H2: Why your dad's friends are all doing this */}
+        <section className="mt-14">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-brown-900 leading-tight">
+            Why your dad&apos;s friends are all doing this
+          </h2>
+          <div className="mt-4 space-y-5 text-brown-700 leading-relaxed text-[17px]">
+            <p>Something&apos;s happening with American dads right now.</p>
+            <p>
+              The smoker on the porch. The raised garden bed. The sourdough
+              starter on the counter. Every dad with a crafty streak is
+              chasing the same thing — a <strong>hands-on project</strong>{" "}
+              he can master at his own pace.
+            </p>
+            <p>
+              Home brewing is the latest one to blow up. After years of
+              buying everything pre-made, people are rediscovering the
+              satisfaction of <em>actually making something</em>. Anti-screen.
+              Anti-corporate. Intensely satisfying.
+            </p>
+            <p>
+              A brewing kit checks every box: ingredients you can taste, a
+              process you can refine, and a finished product you can hand to
+              a friend and say{" "}
+              <strong>&ldquo;I made this.&rdquo;</strong> That&apos;s the
+              rare gift that fits exactly into the moment.
+            </p>
+            <p className="text-xl font-heading font-semibold text-brown-900 border-l-4 border-tan-600 pl-5 py-2 my-8">
+              He doesn&apos;t have to know that. You&apos;re just handing him
+              a piece of it.
+            </p>
+          </div>
+        </section>
+
         {/* NEW: Quick honesty break */}
         <section className="mt-14 bg-tan-200 rounded-2xl p-7 md:p-9 border-l-4 border-brown-900">
           <h2 className="font-heading text-xl md:text-2xl font-bold text-brown-900 leading-tight">
