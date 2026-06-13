@@ -3,7 +3,12 @@ import Image from "next/image";
 import { PackageOpen, ShieldCheck, Gift } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import Stars from "@/components/Stars";
+import StockBadge from "@/components/StockBadge";
 import { getReviews, getRating } from "@/lib/reviews";
+import { products } from "@/lib/products";
+
+const oneGallon = products.find((p) => p.slug === "1-gallon-brewing-kit");
+const fiveGallon = products.find((p) => p.slug === "5-gallon-brewing-kit");
 
 const FEATURED_RATING = getRating("1-gallon-brewing-kit");
 
@@ -107,6 +112,11 @@ export default function Home() {
             <h3 className="font-heading text-xl font-bold text-brown-900 mt-6">
               1 Gallon Brewing Kit — $59.99
             </h3>
+            {oneGallon?.stock !== undefined && (
+              <div className="mt-2 flex justify-center">
+                <StockBadge stock={oneGallon.stock} size="sm" />
+              </div>
+            )}
             <p className="text-brown-700 mt-2 text-sm">
               The perfect small batch brewing kit for your first brew. Kitchen-counter
               sized, beginner-friendly, and actually fun.
@@ -132,6 +142,11 @@ export default function Home() {
             <h3 className="font-heading text-xl font-bold text-brown-900 mt-6">
               5 Gallon Brewing Kit — $105.00
             </h3>
+            {fiveGallon?.stock !== undefined && (
+              <div className="mt-2 flex justify-center">
+                <StockBadge stock={fiveGallon.stock} size="sm" />
+              </div>
+            )}
             <p className="text-brown-700 mt-2 text-sm">
               Ready to brew for friends? Our full-size starter fermentation kit
               scales up without scaling up the complexity.

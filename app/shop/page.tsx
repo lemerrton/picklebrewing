@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import BuyNowButton from "@/components/BuyNowButton";
+import StockBadge from "@/components/StockBadge";
 import { products, productJsonLd } from "@/lib/products";
 
 export const metadata: Metadata = {
@@ -63,9 +64,14 @@ export default function Shop() {
                 <p className="text-brown-700 mt-2 text-sm leading-relaxed">
                   {product.description}
                 </p>
-                <p className="text-2xl font-bold text-brown-900 mt-4">
-                  ${product.price.toFixed(2)}
-                </p>
+                <div className="mt-4 flex items-center gap-3 flex-wrap">
+                  <p className="text-2xl font-bold text-brown-900">
+                    ${product.price.toFixed(2)}
+                  </p>
+                  {product.stock !== undefined && (
+                    <StockBadge stock={product.stock} size="sm" />
+                  )}
+                </div>
 
                 <div className="mt-4">
                   <p className="text-xs font-semibold text-brown-700 uppercase tracking-wide mb-2">

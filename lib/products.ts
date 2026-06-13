@@ -9,6 +9,7 @@ export interface Product {
   size: string;
   sku: string;
   stripeUrl: string;
+  stock?: number;
 }
 
 export const products: Product[] = [
@@ -30,6 +31,7 @@ export const products: Product[] = [
     size: "1 Gallon",
     sku: "PB-1GAL-KIT",
     stripeUrl: "https://buy.stripe.com/00w7sL9ml08JdKe991e3e03",
+    stock: 7,
   },
   {
     name: "5-Gallon Brewing Starter Kit",
@@ -50,6 +52,7 @@ export const products: Product[] = [
     size: "5 Gallon",
     sku: "PB-5GAL-KIT",
     stripeUrl: "https://buy.stripe.com/aFa8wPfKJ8Ff0Xsad5e3e02",
+    stock: 3,
   },
 ];
 

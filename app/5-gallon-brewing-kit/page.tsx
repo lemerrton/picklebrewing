@@ -5,6 +5,7 @@ import Script from "next/script";
 import JsonLd from "@/components/JsonLd";
 import Stars from "@/components/Stars";
 import BuyNowButton from "@/components/BuyNowButton";
+import StockBadge from "@/components/StockBadge";
 import { products, productJsonLd, type Product } from "@/lib/products";
 import {
   getReviews,
@@ -93,9 +94,12 @@ export default function FiveGallonBrewingKit() {
               </a>
             </div>
 
-            <p className="text-2xl font-bold text-brown-900 mt-3">
-              ${product.price.toFixed(2)}
-            </p>
+            <div className="mt-3 flex items-center gap-3 flex-wrap">
+              <p className="text-2xl font-bold text-brown-900">
+                ${product.price.toFixed(2)}
+              </p>
+              {product.stock !== undefined && <StockBadge stock={product.stock} />}
+            </div>
             <p className="text-brown-700 mt-4 leading-relaxed">
               {product.description}
             </p>
