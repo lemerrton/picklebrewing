@@ -259,20 +259,105 @@ export default function BestFathersDayGift() {
             Why not just grab whatever kit is on Amazon?
           </h2>
           <p className="mt-4 text-brown-700 leading-relaxed text-[17px]">
-            You can. But here&apos;s what the reviews of the big-name kits
-            keep saying — and what we built ours to fix:
+            You can. We read hundreds of those reviews while building ours,
+            and two patterns came back over and over.
           </p>
 
-          {/* Objection 1 */}
-          <div className="mt-8">
-            <p className="font-heading text-lg italic text-brown-900 border-l-4 border-tan-600 pl-5 py-1">
+          {/* The "pro" kits are a lot */}
+          <div className="mt-10">
+            <h3 className="font-heading text-xl font-bold text-brown-900">
+              The &ldquo;pro&rdquo; kits are a lot
+            </h3>
+            <p className="font-heading text-lg italic text-brown-900 border-l-4 border-tan-600 pl-5 py-1 mt-4">
               &ldquo;It took an hour just to understand the directions.&rdquo;
             </p>
             <p className="mt-3 text-brown-700 leading-relaxed text-[17px]">
-              Confusing, jargon-filled instructions are the #1 reason gifted
-              kits end up in closets. BrewKit Lab comes with{" "}
-              <strong>one plain-English instruction card</strong>. If he can
-              follow a chili recipe, he can brew.
+              A lot of what&apos;s out there is built for 5-gallon batches —
+              big plastic buckets, a dozen loose parts, instructions that
+              assume you already know what &ldquo;pitching yeast&rdquo;
+              means. Great if you&apos;ve done this before. For a first-timer,
+              it&apos;s a pretty reliable way to end up with a kit that gets
+              half-unpacked and then forgotten.
+            </p>
+          </div>
+
+          {/* The cheap kits are missing half the stuff */}
+          <div className="mt-10">
+            <h3 className="font-heading text-xl font-bold text-brown-900">
+              The cheap kits are missing half the stuff
+            </h3>
+            <p className="font-heading text-lg italic text-brown-900 border-l-4 border-tan-600 pl-5 py-1 mt-4">
+              &ldquo;It doesn&apos;t come with bottles.&rdquo;
+            </p>
+            <p className="mt-3 text-brown-700 leading-relaxed text-[17px]">
+              On the other end, the bargain kits — usually no sanitizer,
+              sometimes no airlock either, and &ldquo;instructions&rdquo;
+              that are really a parts list. You end up placing a second order
+              just to get the stuff you need before you can even start.
+            </p>
+          </div>
+
+          {/* What actually matters checklist */}
+          <div className="mt-10 bg-cream rounded-2xl p-6 md:p-7">
+            <h3 className="font-heading text-xl font-bold text-brown-900">
+              What actually separates the kits that get used
+            </h3>
+            <p className="mt-3 text-brown-700 leading-relaxed text-[17px]">
+              After enough scrolling, the pattern was obvious. The kits that
+              actually get brewed (vs. returned or shelved) all had the same
+              things in common:
+            </p>
+            <ul className="mt-5 space-y-3">
+              {[
+                {
+                  bold: "A real glass fermenter",
+                  rest: "— plastic scratches and holds onto smells after a batch or two",
+                },
+                {
+                  bold: "An airlock and stopper already in the box",
+                  rest: ", not an “optional add-on”",
+                },
+                {
+                  bold: "Sanitizer included",
+                  rest: " — skipping this step ruins more first batches than anything else",
+                },
+                {
+                  bold: "Instructions written for someone who's never done this before",
+                  rest: "",
+                },
+                {
+                  bold: "A small enough batch size",
+                  rest: " that a mistake doesn't waste a ton of ingredients",
+                },
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  className="text-brown-700 text-[17px] flex items-start gap-3 leading-relaxed"
+                >
+                  <span className="text-tan-600 font-bold mt-0.5 shrink-0">
+                    ✓
+                  </span>
+                  <span>
+                    <strong className="text-brown-900">{item.bold}</strong>
+                    {item.rest}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 text-brown-700 leading-relaxed text-[17px] italic">
+              That list became our spec sheet.
+            </p>
+          </div>
+
+          {/* How the 1-gallon stacks up */}
+          <div className="mt-10">
+            <h3 className="font-heading text-xl font-bold text-brown-900">
+              How the 1-Gallon Kit stacks up
+            </h3>
+            <p className="mt-3 text-brown-700 leading-relaxed text-[17px]">
+              It checks every box above. Plus a few things we weren&apos;t
+              sure we needed until customers told us they made all the
+              difference:
             </p>
 
             <figure className="mt-6">
@@ -289,44 +374,58 @@ export default function BestFathersDayGift() {
                 Open the box. Read one page. Brew.
               </figcaption>
             </figure>
+
+            <ul className="mt-6 space-y-4">
+              <li className="text-brown-700 text-[17px] leading-relaxed">
+                <strong className="text-brown-900">
+                  Kitchen-counter sized.
+                </strong>{" "}
+                One gallon is the sweet spot — enough to feel like a real
+                project, small enough that it doesn&apos;t take over the
+                garage.
+              </li>
+              <li className="text-brown-700 text-[17px] leading-relaxed">
+                <strong className="text-brown-900">
+                  Everything is actually in the box.
+                </strong>{" "}
+                No scrambling for a second order before he can get started.
+              </li>
+              <li className="text-brown-700 text-[17px] leading-relaxed">
+                <strong className="text-brown-900">
+                  One plain-English instruction card.
+                </strong>{" "}
+                No homebrew jargon. Open it, read the card, start brewing.
+              </li>
+            </ul>
           </div>
 
-          {/* Objection 2 */}
-          <div className="mt-10">
-            <p className="font-heading text-lg italic text-brown-900 border-l-4 border-tan-600 pl-5 py-1">
-              &ldquo;It doesn&apos;t come with bottles.&rdquo;
-            </p>
-            <p className="mt-3 text-brown-700 leading-relaxed text-[17px]">
-              The most common gift-day disappointment with big-name kits:
-              discovering the bottles, caps, or other gear cost extra. BrewKit
-              Lab includes <strong>everything he needs</strong> for his first
-              brew. Open the box, make beer.
-            </p>
-          </div>
-
-          {/* Objection 3 */}
+          {/* First Batch Guarantee */}
           <div className="mt-10">
             <p className="font-heading text-lg italic text-brown-900 border-l-4 border-tan-600 pl-5 py-1">
               &ldquo;My first batch was a disaster.&rdquo;
             </p>
             <p className="mt-3 text-brown-700 leading-relaxed text-[17px]">
-              If batch one goes wrong, the kit dies in the closet. No big-name
-              kit covers that.{" "}
-              <strong>
-                We do — the First Batch Guarantee: if his first brew
-                doesn&apos;t come out great, we replace the ingredients free
-                and walk him through it.
-              </strong>
+              This is the line we saw most. It&apos;s why every BrewKit Lab
+              kit ships with the{" "}
+              <strong>First Batch Guarantee</strong>: if his first brew
+              doesn&apos;t come out great, we replace the ingredients free
+              and walk him through it personally. No questions, no fine print.
             </p>
-
+            <p className="mt-3 text-brown-700 leading-relaxed text-[17px]">
+              As the gift-giver, that&apos;s the part that mattered most when
+              customers tested it on dads. You&apos;re not just betting on
+              whether he&apos;d like it — you&apos;re betting on whether it
+              would actually <em>work</em>. The guarantee takes that bet off
+              the table.
+            </p>
           </div>
 
           {/* Honest close */}
           <p className="mt-10 text-brown-700 leading-relaxed text-[17px]">
-            We&apos;re not going to tell you the other kits are junk. Some are
-            decent. But they were built for hobbyists. Ours was built to{" "}
-            <strong>survive being a gift</strong> — for a total beginner, with
-            zero patience for jargon, whose first batch has to go right.
+            We&apos;re not going to tell you the other kits are junk. Some
+            are decent. But they were built for hobbyists. Ours was built to{" "}
+            <strong>survive being a gift</strong> — for a total beginner,
+            with zero patience for jargon, whose first batch has to go right.
           </p>
         </section>
 
@@ -421,18 +520,25 @@ export default function BestFathersDayGift() {
           </div>
         </section>
 
-        {/* Final CTA */}
+        {/* Final CTA — The Verdict */}
         <section className="mt-14 bg-cream rounded-2xl p-8 md:p-10 text-center">
-          <p className="text-brown-700 leading-relaxed text-[17px] max-w-xl mx-auto">
-            Order now so it arrives in time — and this year, instead of the
-            polite &ldquo;thanks,&rdquo; you get the phone call where he
-            won&apos;t stop talking about <em>his beer</em>.
+          <p className="text-xs font-bold text-tan-600 uppercase tracking-widest">
+            The Verdict
+          </p>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-brown-900 leading-tight mt-3 max-w-xl mx-auto">
+            If he&apos;s even a little curious about brewing, this is the
+            gift to actually buy.
+          </h2>
+          <p className="text-brown-700 leading-relaxed text-[17px] mt-5 max-w-xl mx-auto">
+            Low-risk for you, genuinely fun for him. With Father&apos;s Day
+            this close, order sooner rather than later to make sure it
+            arrives in time.
           </p>
           <Link
-            href="/shop"
+            href="/1-gallon-brewing-kit"
             className="inline-block mt-6 bg-brown-900 text-white font-body font-semibold py-3.5 px-10 rounded-lg hover:bg-brown-700 transition-colors text-base shadow-sm"
           >
-            Gift This Kit →
+            Get the 1-Gallon Starter Kit →
           </Link>
           <p className="mt-3 text-xs text-tan-600">
             First Batch Guarantee · Ships everywhere · Secure Stripe checkout
